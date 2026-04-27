@@ -46,7 +46,7 @@ GitShield performs a **safe, temporary analysis**:
 ## 📦 Installation
 
 ```bash
-git clone https://github.com/YOUR-USERNAME/GitShield.git
+git clone https://github.com/repository.git
 cd GitShield
 pip install requests rich
 ```
