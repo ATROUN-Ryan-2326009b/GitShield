@@ -120,12 +120,4 @@ GitShield detects patterns such as:
 
 ---
 
-## ⭐ Contribute
 
-Feel free to fork the project and submit improvements.
-
----
-
-## 📜 License
-
-MIT License
