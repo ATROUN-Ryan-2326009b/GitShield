@@ -7,19 +7,6 @@ It performs static analysis on source code, detects suspicious patterns, and pro
 ---
 
 <p align="center">
-  <img src="./logo.png" width="300"/>
-</p>
-
-<h1 align="center">🛡️ GitShield</h1>
-
-<p align="center">
-  Advanced GitHub Security Scanner<br>
-  <b>by frizz</b>
-</p>
-
----
-
-<p align="center">
   <img src="./logo.png" width="260"/>
 </p>
 
