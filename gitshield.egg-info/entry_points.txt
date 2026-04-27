@@ -1,0 +1,3 @@
+[console_scripts]
+GitShield = cli:main
+gitshield = cli:main

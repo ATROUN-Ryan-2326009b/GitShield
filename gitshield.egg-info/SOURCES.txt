@@ -1,0 +1,13 @@
+README.md
+cli.py
+github_scanner.py
+risk_score.py
+rules.py
+scanner.py
+setup.py
+gitshield.egg-info/PKG-INFO
+gitshield.egg-info/SOURCES.txt
+gitshield.egg-info/dependency_links.txt
+gitshield.egg-info/entry_points.txt
+gitshield.egg-info/requires.txt
+gitshield.egg-info/top_level.txt
