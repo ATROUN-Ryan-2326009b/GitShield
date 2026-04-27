@@ -2,52 +2,64 @@ SIGNATURES = {
     "command_execution": {
         "severity": 25,
         "patterns": [
-            r"\bos\.system\s*\(",
-            r"\bsubprocess\.(Popen|call|run)\s*\(",
-            r"\beval\s*\(",
-            r"\bexec\s*\("
+            "os.system(",
+            "subprocess.Popen(",
+            "subprocess.call(",
+            "subprocess.run(",
+            "exec(",
+            "eval("
         ]
     },
     "network_activity": {
         "severity": 15,
         "patterns": [
-            r"\brequests\.(get|post)\s*\(",
-            r"\burllib\.request\.urlopen\s*\(",
-            r"\bsocket\.socket\s*\("
+            "requests.get(",
+            "requests.post(",
+            "socket.socket(",
+            "urllib.request.urlopen(",
+            "curl ",
+            "wget "
         ]
     },
     "credential_access": {
         "severity": 20,
         "patterns": [
-            r"(AWS_SECRET_ACCESS_KEY|GITHUB_TOKEN|PRIVATE_KEY|API_KEY)",
-            r"(password|passwd|token|secret)\s*=\s*[\"'][^\"']{8,}[\"']"
+            "os.environ.get(",
+            "os.getenv(",
+            ".env",
+            "AWS_SECRET_ACCESS_KEY",
+            "GITHUB_TOKEN",
+            "API_KEY",
+            "SECRET_KEY",
+            "PRIVATE_KEY"
         ]
     },
     "destructive_action": {
-        "severity": 35,
+        "severity": 45,
         "patterns": [
-            r"\bshutil\.rmtree\s*\(",
-            r"\bos\.remove\s*\(",
-            r"\bos\.unlink\s*\(",
-            r"rm\s+-rf\s+/"
+            "rm -rf",
+            "shutil.rmtree(",
+            "os.remove(",
+            "os.unlink(",
+            "Path.unlink(",
+            "del /f"
         ]
     },
     "obfuscation": {
-        "severity": 30,
+        "severity": 35,
         "patterns": [
-            r"\bbase64\.b64decode\s*\(",
-            r"\bmarshal\.loads\s*\(",
-            r"\bcompile\s*\(",
-            r"__import__\s*\("
+            "base64.b64decode(",
+            "marshal.loads(",
+            "__import__("
         ]
     },
     "persistence": {
         "severity": 35,
         "patterns": [
-            r"systemctl\s+enable",
-            r"crontab\s+-e",
-            r"schtasks\s+/create",
-            r"reg\s+add"
+            "crontab",
+            "systemctl enable",
+            "schtasks",
+            "reg add"
         ]
     }
 }
